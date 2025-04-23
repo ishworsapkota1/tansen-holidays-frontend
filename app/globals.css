@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --primary-50: #FFF6F3;
+  --primary-100: #F1602A;
+  --purple-800: #4F2C7F;
+  --purple-900: #3B235D;
+}
+
+@theme {
+  --color-primary-50: var(--primary-50);
+  --color-primary-100: var(--primary-100);
+  --color-purple-800: var(--purple-800);
+  --color-purple-900: var(--purple-900);
+}
+
+/* Custom utilities for transparency */
+@utility bg-transparent-white {
+  background-color: rgba(255, 255, 255, 0.40);
+}
+
+@utility backdrop-blur-custom {
+  backdrop-filter: blur(10.8px);
+  -webkit-backdrop-filter: blur(10.8px); /* For Safari compatibility */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
