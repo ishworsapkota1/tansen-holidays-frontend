@@ -128,18 +128,18 @@ export default function HolidayPackages() {
   ];
 
   return (
-    <div className="w-full bg-gradient-to-b from-purple-800/30 to-white">
+    <div className="w-full ">
       <Banner
         className="h-[10vh]"
         img="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=60"
       />
       <main className="max-w-11/12 mx-auto py-8 px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl w-full text-center font-bold text-purple-800 mb-6">
+        <h1 className="text-3xl w-full text-center font-bold text-purple-800 my-10">
           Holiday Packages
         </h1>
 
         {/* Package Cards */}
-        <section className="w-full mx-auto py-10">
+        <section className="w-full mx-auto ">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {packages.map((pkg) => (
               <PackageCard key={pkg.id} pkg={pkg} />

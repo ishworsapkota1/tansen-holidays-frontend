@@ -44,7 +44,7 @@ const TripCard: React.FC<TripCardProps> = ({ trip }) => {
               </p>
               <p className="text-sm text-gray-600">Duration: {trip.duration}</p>
             </div>
-            <button className="w-full mt-4 bg-purple-600 text-white py-2 rounded-md text-sm font-medium hover:bg-purple-700 transition-colors duration-300">
+            <button className="w-full mt-4 bg-indigo-600 text-white py-2 rounded-md text-sm font-medium hover:bg-purple-700 transition-colors duration-300">
               Select
             </button>
           </div>

@@ -9,7 +9,7 @@ type bannerprops = {
 const Banner = ({ img, title, className }: bannerprops) => {
   return (
     <div className="h-[60vh] relative">
-      <div className="absolute z-[4] inset-0 w-full h-80 bg-gradient-to-b from-black via-black/50 to-transparent" />
+      <div className="absolute z-[4] inset-0 w-full h-[60vh] bg-gradient-to-r from-indigo-900/30 to-indigo-600/20" />
       <Image
         src={img}
         alt="country-img"

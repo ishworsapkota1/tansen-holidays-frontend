@@ -126,13 +126,13 @@ export default function ReturnTrip() {
       </section>
 
           {/* Proceed Button */}
-            <div className="mt-8 text-center">
+            {/* <div className="mt-8 text-center">
               <button
                 className="bg-indigo-600 text-white py-3 px-6 rounded-md text-sm font-medium hover:bg-indigo-700 transition-colors duration-300"
               >
                 Proceed to Booking
               </button>
-            </div>
+            </div> */}
     </main>
     </>
   );
