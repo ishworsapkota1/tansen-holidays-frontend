@@ -48,7 +48,7 @@ export default function ClientBooking({ bus }: ClientBookingProps) {
   };
 
   // Calculate total
-  const ticketPrice = parseInt(bus.price.replace("RS. ", "").replace(",", ""));
+  const ticketPrice = parseInt(bus.price.replace("RS. ", " ").replace(",", " "));
   const discount = 10;
   const total = ticketPrice - discount;
 

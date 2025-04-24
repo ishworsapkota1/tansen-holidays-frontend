@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import ReturnTripForm from "./tripForm";
 import TripCard from "@/components/cards/tripCards";
 import Banner from "@/components/shared/Banner";
+// import { useState } from "react";
 
 interface Trip {
   id: string;
@@ -18,10 +18,10 @@ interface Trip {
 }
 
 export default function ReturnTrip() {
-  const [outboundTrips, setOutboundTrips] = useState<Trip[]>([]);
-  const [returnTrips, setReturnTrips] = useState<Trip[]>([]);
-  const [selectedOutbound, setSelectedOutbound] = useState<Trip | null>(null);
-  const [selectedReturn, setSelectedReturn] = useState<Trip | null>(null);
+  // const [outboundTrips, setOutboundTrips] = useState<Trip[]>([]);
+  // const [returnTrips, setReturnTrips] = useState<Trip[]>([]);
+  // const [selectedOutbound, setSelectedOutbound] = useState<Trip | null>(null);
+  // const [selectedReturn, setSelectedReturn] = useState<Trip | null>(null);
 
   // Mock trip data (replace with API call in production)
   const popularTrips: Trip[] = [
@@ -93,11 +93,10 @@ export default function ReturnTrip() {
         trip.departureCity.toLowerCase() === formData.destination.toLowerCase() &&
         trip.arrivalCity.toLowerCase() === formData.origin.toLowerCase()
     );
-
-    setOutboundTrips(outbound);
-    setReturnTrips(returnTrips);
-    setSelectedOutbound(null);
-    setSelectedReturn(null);
+  
+    // just simulate, no state needed for now
+    console.log("Outbound Trips:", outbound);
+    console.log("Return Trips:", returnTrips);
   };
 
   return (

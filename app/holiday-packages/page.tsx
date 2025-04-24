@@ -24,7 +24,7 @@ export default function HolidayPackages() {
       description:
         "Comfortable bus transport from Kathmandu to Pokhara with direct drop-off at your destination.",
       image:
-        "",
+        "https://images.unsplash.com/photo-1702206244130-c29bcefe6aa9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9hZHN8ZW58MHx8MHx8fDA%3D",
     },
     {
       id: "2",
@@ -35,7 +35,7 @@ export default function HolidayPackages() {
       description:
         "Quick shuttle service from Kathmandu to Bhaktapur, dropping passengers at their chosen location.",
       image:
-        "",
+        "https://images.unsplash.com/photo-1702206244130-c29bcefe6aa9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9hZHN8ZW58MHx8MHx8fDA%3D",
     },
     {
       id: "3",
@@ -46,7 +46,7 @@ export default function HolidayPackages() {
       description:
         "Direct bus transport from Pokhara to Chitwan with a smooth drop-off at your destination.",
       image:
-        "",
+        "https://images.unsplash.com/photo-1702206244130-c29bcefe6aa9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9hZHN8ZW58MHx8MHx8fDA%3D",
     },
     {
       id: "4",
@@ -57,7 +57,7 @@ export default function HolidayPackages() {
       description:
         "Premium bus service from Kathmandu to Lumbini with comfortable seating and direct drop-off.",
       image:
-        "",
+        "https://images.unsplash.com/photo-1702206244130-c29bcefe6aa9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9hZHN8ZW58MHx8MHx8fDA%3D",
     },
     {
       id: "5",
@@ -68,7 +68,7 @@ export default function HolidayPackages() {
       description:
         "Reliable bus transport from Chitwan to Biratnagar, dropping passengers at their destination.",
       image:
-        "",
+        "https://images.unsplash.com/photo-1702206244130-c29bcefe6aa9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9hZHN8ZW58MHx8MHx8fDA%3D",
     },
     {
       id: "6",
@@ -79,7 +79,7 @@ export default function HolidayPackages() {
       description:
         "Efficient bus service from Pokhara to Butwal with a direct drop-off at your chosen location.",
       image:
-        "",
+        "https://images.unsplash.com/photo-1702206244130-c29bcefe6aa9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9hZHN8ZW58MHx8MHx8fDA%3D",
     },
     {
       id: "7",
@@ -90,7 +90,7 @@ export default function HolidayPackages() {
       description:
         "Comfortable transport from Kathmandu to Janakpur, ensuring a hassle-free drop-off.",
       image:
-        "",
+        "https://images.unsplash.com/photo-1702206244130-c29bcefe6aa9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9hZHN8ZW58MHx8MHx8fDA%3D",
     },
     {
       id: "8",
@@ -101,7 +101,7 @@ export default function HolidayPackages() {
       description:
         "Convenient bus service from Lumbini to Nepalgunj with direct passenger drop-off.",
       image:
-        "",
+        "https://images.unsplash.com/photo-1702206244130-c29bcefe6aa9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9hZHN8ZW58MHx8MHx8fDA%3D",
     },
     {
       id: "9",
@@ -112,7 +112,7 @@ export default function HolidayPackages() {
       description:
         "Fast and reliable transport from Bhaktapur to Hetauda, dropping passengers at their destination.",
       image:
-        "",
+        "https://images.unsplash.com/photo-1702206244130-c29bcefe6aa9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9hZHN8ZW58MHx8MHx8fDA%3D",
     },
     {
       id: "10",
@@ -123,7 +123,7 @@ export default function HolidayPackages() {
       description:
         "Direct bus service from Kathmandu to Birgunj with comfortable seating and drop-off at your destination.",
       image:
-        "",
+        "https://images.unsplash.com/photo-1702206244130-c29bcefe6aa9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9hZHN8ZW58MHx8MHx8fDA%3D",
     },
   ];
 

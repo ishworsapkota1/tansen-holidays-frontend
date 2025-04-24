@@ -42,10 +42,10 @@ export default function ChooseVehicle() {
     },
   ];
 
-  const handleSelectVehicle = (name: string) => {
-    // alert(`You have selected: ${name}`);
-    // // Add logic to proceed with booking (e.g., redirect or update state)
-  };
+  // const handleSelectVehicle = (name: string) => {
+  //    alert(`You have selected: ${name}`);
+  //   // Add logic to proceed with booking (e.g., redirect or update state)
+  // };
 
   return (
     <main className="max-w-11/12 mx-auto py-8 px-4 sm:px-6 lg:px-8">
@@ -55,7 +55,7 @@ export default function ChooseVehicle() {
           <VehicleCard
             key={vehicle.id}
             vehicle={vehicle}
-            onSelect={handleSelectVehicle}
+            // onSelect={handleSelectVehicle}
           />
         ))}
       </div>

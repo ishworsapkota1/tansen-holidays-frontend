@@ -11,10 +11,10 @@ interface Vehicle {
 
   interface VehicleCardProps {
     vehicle: Vehicle;
-    onSelect: (name: string) => void;
+    onSelect?: (name: string) => void;
   }
 
-const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onSelect }) => {
+const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle }) => {
   return (
     <div className="vehicle-card bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
       <Image
@@ -29,7 +29,7 @@ const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onSelect }) => {
         <p className="text-sm text-gray-600 mt-1">{vehicle.description}</p>
         <p className="text-lg font-bold text-indigo-600 mt-2">{vehicle.price}</p>
         <button
-          onClick={() => onSelect(vehicle.name)}
+          // onClick={() => onSelect(vehicle.name)}
           className="w-full mt-4 bg-indigo-600 text-white py-2 rounded-md text-sm font-medium hover:bg-indigo-700 transition-colors duration-300"
         >
           Select

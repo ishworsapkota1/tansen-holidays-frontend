@@ -5,17 +5,14 @@ export const WhyChooseTansen = () => {
       {
         title: "Comfortable Seat",
         image: "/whytansen/comfortableseats.png",
-        subtitle: ""
       },
       {
         title: "Free water",
         image: "/whytansen/bottle.png",
-        subtitle: ""
       },
       {
         title: "Full AC Delux",
         image: "/whytansen/AC.png",
-        description: ""
       },
       {
         title: "Pick & Drop",
@@ -25,7 +22,6 @@ export const WhyChooseTansen = () => {
       {
         title: "20+ Driving Experiences",
         image: "/whytansen/experience.png",
-        subtitle: ""
       }
     ];
   

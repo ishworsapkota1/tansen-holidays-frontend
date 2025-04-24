@@ -13,7 +13,7 @@ export default async function CheckoutPage({ params }: { params: Promise<{ id: s
     return <div className="text-center py-10">Bus not found</div>;
   }
 
-  const ticketPrice = parseInt(bus.price.replace("RS. ", "").replace(",", ""));
+  const ticketPrice = parseInt(bus.price.replace("RS. ", " ").replace(",", " "));
   const discount = 10;
   const total = ticketPrice - discount;
 

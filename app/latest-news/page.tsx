@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import road from "@/public/herobg.png";
 import { newsArticles, NewsArticle } from "./blogdata";
 
 // Hero Component
@@ -27,7 +26,7 @@ function NewsCard({ article }: { article: NewsArticle }) {
     <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
         <div className="overflow-hidden rounded-t-xl">
           <Image
-            src={article.image || road}
+            src={article.image}
             alt={article.title}
             width={400}
             height={200}

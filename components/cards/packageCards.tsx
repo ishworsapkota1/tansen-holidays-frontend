@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import road from "@/public/road.avif";
 
 interface HolidayPackage {
   id: string;
@@ -22,7 +21,7 @@ const PackageCard: React.FC<PackageCardProps> = ({ pkg }) => {
     <div className="package-card p-4 bg-blue-50 rounded-lg shadow-md overflow-hidden group">
       <div className="overflow-hidden rounded-md">
         <Image
-          src={pkg.image || road}
+          src={pkg.image}
           alt={pkg.title}
           width={100}
           height={100}

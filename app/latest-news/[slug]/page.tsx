@@ -1,11 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import road from "@/public/roads.png";
 import { newsArticles } from "../blogdata";
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = newsArticles.find((article) => article.slug === params.slug);
+interface Props {
+  params: Promise<{ slug: string }>;
+}
+
+export default async function BlogPostPage({ params }: Props) {
+  const { slug } = await params;
+  const post = newsArticles.find((article) => article.slug === slug);
 
   if (!post) {
     notFound();
@@ -17,7 +21,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         <article className="bg-white rounded-xl shadow-sm p-6 md:p-8">
           {post.image && (
             <Image
-              src={post.image || road}
+              src={post.image}
               alt={post.title}
               width={800}
               height={400}
