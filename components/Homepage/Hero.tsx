@@ -63,7 +63,7 @@ const HeroSection = () => {
   return (
     <div className="relative w-full overflow-hidden rounded-lg">
       {/* Background with Bus Image */}
-      <div className="relative h-[60vh] bg-white">
+      <div className="relative  h-[60vh] bg-white">
         {/* <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent z-10"></div> */}
         <Image
           src="/heroimage.png"
@@ -74,7 +74,7 @@ const HeroSection = () => {
         />
 
         {/* Content Overlay */}
-        <div className="absolute inset-0 z-20 flex flex-col justify-center p-8">
+        <div className="w-11/12 mx-auto absolute inset-0 z-20 flex flex-col justify-center p-8">
           <p className="text-orange-500 font-medium mb-2">
             Find your travel partner
           </p>
