@@ -128,9 +128,10 @@ export default function HolidayPackages() {
   ];
 
   return (
-    <div className="w-full ">
+    <div className="w-full bg-gray-50">
       <Banner
         className="h-[10vh]"
+        title="Holiday Packages"
         img="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=60"
       />
       <main className="max-w-11/12 mx-auto py-8 px-4 sm:px-6 lg:px-8">
@@ -139,7 +140,7 @@ export default function HolidayPackages() {
         </h1>
 
         {/* Package Cards */}
-        <section className="w-full mx-auto ">
+        <section className="w-full mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {packages.map((pkg) => (
               <PackageCard key={pkg.id} pkg={pkg} />

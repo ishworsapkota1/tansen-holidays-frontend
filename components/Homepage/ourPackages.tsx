@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const HolidayPackages = () => {
     const packages = [
@@ -60,9 +61,11 @@ export const HolidayPackages = () => {
               {/* Content */}
               <div className="absolute bottom-0 left-0 p-6 w-full">
                 <h3 className="text-2xl font-bold text-white mb-4">{pkg.name}</h3>
+                <Link href="/package-details">
                 <button className="bg-black bg-opacity-60 text-white px-4 py-1 rounded-full text-sm border border-white">
                   Book now
                 </button>
+                </Link>
               </div>
             </div>
           ))}

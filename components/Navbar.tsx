@@ -30,48 +30,48 @@ const Navbar: React.FC = () => {
         <nav className="flex items-center gap-5">
           <Link
             href="/"
-            className={`text-base font-semibold transition-colors duration-200 ${
-              pathname === "/" ? "text-purple-800" : "text-zinc-500 hover:text-purple-800"
+            className={`text-base  transition-colors duration-200 ${
+              pathname === "/" ? "text-purple-800 font-semibold" : "text-zinc-500 hover:text-purple-800"
             }`}
           >
             Home
           </Link>
           <Link
             href="/return-trip"
-            className={`text-base font-semibold transition-colors duration-200 ${
-              pathname === "/return-trip" ? "text-purple-800" : "text-zinc-500 hover:text-purple-800"
+            className={`text-base transition-colors duration-200 ${
+              pathname === "/return-trip" ? "text-purple-800 font-semibold" : "text-zinc-500 hover:text-purple-800"
             }`}
           >
             Return Trip
           </Link>
           <Link
             href="/about-us"
-            className={`text-base font-semibold transition-colors duration-200 ${
-              pathname === "/about-us" ? "text-purple-800" : "text-zinc-500 hover:text-purple-800 "
+            className={`text-base  transition-colors duration-200 ${
+              pathname === "/about-us" ? "text-purple-800 font-semibold" : "text-zinc-500 hover:text-purple-800 "
             }`}
           >
             About Us
           </Link>
           <Link
             href="/holiday-packages"
-            className={`text-base font-semibold transition-colors duration-200 ${
-              pathname === "/holiday-packages" ? "text-purple-800" : "text-zinc-500 hover:text-purple-800"
+            className={`text-base  transition-colors duration-200 ${
+              pathname === "/holiday-packages" ? "text-purple-800 font-semibold" : "text-zinc-500 hover:text-purple-800"
             }`}
           >
             Holiday Packages
           </Link>
           <Link
             href="/our-services"
-            className={`text-base font-semibold transition-colors duration-200 ${
-              pathname === "/our-services" ? "text-purple-800 " : "text-zinc-500 hover:text-purple-800"
+            className={`text-base transition-colors duration-200 ${
+              pathname === "/our-services" ? "text-purple-800  font-semibold" : "text-zinc-500 hover:text-purple-800"
             }`}
           >
             Our Services
           </Link>
           <Link
             href="/latest-news"
-            className={`text-base font-semibold transition-colors duration-200 ${
-              pathname === "/latest-news" ? "text-purple-800 " : "text-zinc-500 hover:text-purple-800 text-base"
+            className={`text-base transition-colors duration-200 ${
+              pathname === "/latest-news" ? "text-purple-800  font-semibold " : "text-zinc-500 hover:text-purple-800 text-base"
             }`}
           >
             Latest News

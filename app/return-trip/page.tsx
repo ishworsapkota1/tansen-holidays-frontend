@@ -75,33 +75,10 @@ export default function ReturnTrip() {
     },
   ];
 
-  const handleSearch = (formData: {
-    origin: string;
-    destination: string;
-    outboundDate: string;
-    returnDate: string;
-    passengers: number;
-  }) => {
-    // Simulate API call to fetch trips
-    const outbound = popularTrips.filter(
-      (trip) =>
-        trip.departureCity.toLowerCase() === formData.origin.toLowerCase() &&
-        trip.arrivalCity.toLowerCase() === formData.destination.toLowerCase()
-    );
-    const returnTrips = popularTrips.filter(
-      (trip) =>
-        trip.departureCity.toLowerCase() === formData.destination.toLowerCase() &&
-        trip.arrivalCity.toLowerCase() === formData.origin.toLowerCase()
-    );
-  
-    // just simulate, no state needed for now
-    console.log("Outbound Trips:", outbound);
-    console.log("Return Trips:", returnTrips);
-  };
-
   return (
     <>
     <Banner
+    title= "Return Trip"
     img="https://images.unsplash.com/photo-1561553521-de4fcbea79c1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRyaXB8ZW58MHx8MHx8fDA%3D"
     />
     <main className="max-w-11/12 mx-auto py-8 px-4 sm:px-6 lg:px-8">
@@ -110,7 +87,7 @@ export default function ReturnTrip() {
       </h1>
 
       {/* Form */}
-      <ReturnTripForm onSearch={handleSearch} />
+      <ReturnTripForm/>
 
       {/* Popular Trips */}
       <section className="w-full mx-auto py-10">

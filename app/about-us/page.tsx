@@ -6,6 +6,7 @@ export default function AboutUs() {
   return (
     <>
       <Banner
+      title= "About Us"
         img="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=60"
       />
       <main className="max-w-11/12 mx-auto py-8 px-4 sm:px-6 lg:px-8">

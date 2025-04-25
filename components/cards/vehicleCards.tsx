@@ -1,12 +1,13 @@
 "use client";
 import Image from "next/image";
+import { StaticImageData } from 'next/image';
 
 interface Vehicle {
     id: string;
     name: string;
     description: string;
     price: string;
-    image: string;
+    image: string | StaticImageData;
   }
 
   interface VehicleCardProps {
@@ -27,10 +28,10 @@ const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle }) => {
       <div className="p-4">
         <h3 className="text-lg font-semibold text-gray-900">{vehicle.name}</h3>
         <p className="text-sm text-gray-600 mt-1">{vehicle.description}</p>
-        <p className="text-lg font-bold text-indigo-600 mt-2">{vehicle.price}</p>
+        <p className="text-lg font-bold text-green-600 mt-2">{vehicle.price}</p>
         <button
           // onClick={() => onSelect(vehicle.name)}
-          className="w-full mt-4 bg-indigo-600 text-white py-2 rounded-md text-sm font-medium hover:bg-indigo-700 transition-colors duration-300"
+          className="w-full mt-4 bg-purple-800 text-white py-2 rounded-md text-sm font-medium hover:bg-purple-900 transition-colors duration-300"
         >
           Select
         </button>

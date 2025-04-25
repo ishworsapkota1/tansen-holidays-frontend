@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { ReactNode } from "react";
 
 type bannerprops = {
@@ -8,30 +9,28 @@ type bannerprops = {
 };
 const Banner = ({ img, title, className }: bannerprops) => {
   return (
-    <div className="h-[60vh] relative">
-      <div className="absolute z-[4] inset-0 w-full h-[60vh] bg-gradient-to-r from-indigo-900/30 to-indigo-600/20" />
+    <div className={`relative w-full h-[50vh] md:h-[60vh] overflow-hidden ${className}`}>
       <Image
         src={img}
-        alt="country-img"
-        width={1000}
-        height={1000}
-        className="w-full h-full object-cover "
+        alt="Tansen Holidays Services"
+        layout="fill"
+        objectFit="cover"
+        quality={85}
+        className="brightness-75"
       />
-      {/* <Image
-        width={1000}
-        height={1000}
-        src="/pattern.png"
-        alt="expedition-image"
-        className=" absolute -bottom-2 w-full h-20 z-[4]"
-      /> */}
-      {/* dot overlay */}
-      {/* <div className="absolute top-0  h-full w-full bg-[radial-gradient(#ffffff23_1px,#f3f3f311_1px)] bg-[size:4px_4px] z-[2]" /> */}
-      <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-[4]">
-        <h1
-          className={`font-palker lg:text-[5.5vw] md:text-5xl text-2xl text-white uppercase tracking-wider whitespace-nowrap ${className}`}
-        >
+      <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/30 to-indigo-600/20 flex flex-col items-center justify-center text-center px-4">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
           {title}
         </h1>
+        <p className="text-lg md:text-xl text-gray-100 mt-4 max-w-3xl">
+          Discover seamless travel with Tansen Holidays—offering reliable, comfortable, and modern transportation across Nepal.
+        </p>
+        <Link
+          href="/booking"
+          className="mt-6 bg-white text-indigo-600 py-3 px-8 rounded-full text-base font-medium hover:bg-indigo-100 transition-colors duration-300"
+        >
+          Explore Services
+        </Link>
       </div>
     </div>
   );

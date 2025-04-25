@@ -18,7 +18,7 @@ interface PackageCardProps {
 
 const PackageCard: React.FC<PackageCardProps> = ({ pkg }) => {
   return (
-    <div className="package-card p-4 bg-blue-50 rounded-lg shadow-md overflow-hidden group">
+    <div className="package-card p-4 bg-white rounded-lg shadow-md overflow-hidden group">
       <div className="overflow-hidden rounded-md">
         <Image
           src={pkg.image}
