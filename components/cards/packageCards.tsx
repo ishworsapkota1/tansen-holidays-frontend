@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 interface HolidayPackage {
   id: string;
@@ -18,29 +19,37 @@ interface PackageCardProps {
 
 const PackageCard: React.FC<PackageCardProps> = ({ pkg }) => {
   return (
-    <div className="package-card p-4 bg-white rounded-lg shadow-md overflow-hidden group">
-      <div className="overflow-hidden rounded-md">
-        <Image
-          src={pkg.image}
-          alt={pkg.title}
-          width={100}
-          height={100}
-          className="w-full h-40 object-cover rounded-md group-hover:scale-110 transition-transform"
-        />
-      </div>
-      <div className="p-1">
-        <h3 className="text-lg font-semibold text-gray-900">{pkg.title}</h3>
-        <p className="text-sm text-orange-600 mt-1">
-          {pkg.duration} | {pkg.price}
-        </p>
-        <p className="text-sm text-gray-600 mt-2 line-clamp-2">
-          {pkg.description}
-        </p>
-        <button className="w-full mt-4 bg-indigo-600 text-white py-2 rounded-md text-sm font-medium hover:bg-purple-800 transition-colors duration-300">
-          View Details
-        </button>
-      </div>
+    <div className="group h-full bg-white rounded-lg overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-lg hover:translate-y-[-4px] flex flex-col">
+  <div className="overflow-hidden h-52 relative">
+    <div className="absolute top-3 right-3 bg-white/25 backdrop-blur-xs px-2.5 py-1 rounded-md z-10 text-base font-semibold text-purple-800 shadow-sm">
+      {pkg.duration}  |  {pkg.price}
     </div>
+    <Image
+      src={pkg.image}
+      alt={pkg.title}
+      width={400}
+      height={300}
+      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+    />
+  </div>
+  <div className="p-5 flex-grow flex flex-col justify-between">
+    <div>
+      <div className="flex justify-between items-center mb-2">
+        <h3 className="text-lg font-bold text-gray-800 tracking-tight">{pkg.title}</h3>
+        {/* <span className="text-sm font-bold text-purple-700 ml-2">{pkg.price}</span> */}
+      </div>
+      <div className="w-2/5 h-1 bg-primary-100 rounded-full mb-3"></div>
+      <p className="text-sm text-gray-600 line-clamp-2 mb-5">
+        {pkg.description}
+      </p>
+    </div>
+    <Link href="/booking">
+    <button className="w-full py-2.5 bg-purple-800 text-white rounded-md font-medium transition-all duration-200 hover:bg-purple-900 focus:outline-none focus:ring-2 focus:ring-purple-300">
+      View Details
+    </button>
+    </Link>
+  </div>
+</div>
   );
 };
 

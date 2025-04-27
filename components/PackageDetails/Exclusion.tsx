@@ -18,8 +18,8 @@ const PackageExclusion = ({ index, item }: { index: number; item: any }) => {
         </div>
         {/* title */}
         <div className="font-medium text-[15px]">
-          <span className="font-semibold">{item.title}:</span>{" "}
-          <span className="text-secondary-400">{item.description}</span>
+          <span className="font-semibold">{item.item}</span>{" "}
+          {/* <span className="text-secondary-400">{item.description}</span> */}
         </div>
       </div>
     </div>

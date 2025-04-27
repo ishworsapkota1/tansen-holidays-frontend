@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const ReturnTripForm = ({  }) => {
   const [origin, setOrigin] = useState("");
-  const [destination, setDestination] = useState("");
+  const [destination, setDestination] = useState("Tansen");
   const [returnDate, setReturnDate] = useState("");
   // const [passengers, setPassengers] = useState(1);
 
@@ -16,10 +16,12 @@ const ReturnTripForm = ({  }) => {
   //   onSearch({ origin, destination, returnDate, passengers });
   // };
 
+  const today = new Date().toISOString().split('T')[0];
+
   return (
     <form
       // onSubmit={handleSubmit}
-      className="bg-white rounded-lg shadow-md py-10 mx-auto"
+      className="bg-white rounded-lg shadow-md py-10 mx-auto w-11/12 absolute top-0 left-1/2 -translate-1/2"
     >
       <div className="w-4/5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mx-auto">
         <div>
@@ -30,7 +32,7 @@ const ReturnTripForm = ({  }) => {
             type="text"
             value={origin}
             onChange={(e) => setOrigin(e.target.value)}
-            placeholder="e.g., New York"
+            placeholder="e.g. Kathmandu"
             className="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
             required
           />
@@ -41,7 +43,6 @@ const ReturnTripForm = ({  }) => {
             type="text"
             value={destination}
             onChange={(e) => setDestination(e.target.value)}
-            placeholder="e.g., Boston"
             className="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
             required
           />
@@ -53,6 +54,7 @@ const ReturnTripForm = ({  }) => {
           <input
             type="date"
             value={returnDate}
+            min={today}
             onChange={(e) => setReturnDate(e.target.value)}
             className="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
             required

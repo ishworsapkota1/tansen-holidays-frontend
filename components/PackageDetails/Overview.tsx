@@ -3,22 +3,7 @@ import React from "react";
 const PackageOverview = () => {
   return (
     <p className="w-full font-medium leading-relaxed md:text-base  text-sm text-secondary-400">
-      Everest Circuit Trek, also known as Everest Round Trek, is a classic
-      expedition-style trek around the world’s seventh highest peak, Everest
-      8167m and its broad massif of 7000m peaks. Everest Circuit is a
-      challenging trek in the western part of Nepal, offering full adventure and
-      off the beaten path experience in the remote and unspoilt region of Nepal.
-      Everest circuit trek itinerary travels through serene, isolated regions
-      full of natural beauty, crossing through highlands and high passes with
-      astonishing viewpoints. The route offers constant mountains views while
-      passing through remote villages and astonishing landscape including
-      several high passes, dense forests and glaciers. Our 20 days Everest
-      circuit trek is a fully guided and supported trek with camping
-      accommodation throughout the trek. Our journey to Everest round trek
-      starts with a short flight to Pokhara and then followed by an off-road
-      drive to Darbang the next day. Our actual trek commences from Darbang as
-      we follow the well-paced itinerary which we have meticulously devised
-      keeping every important aspect in mind.
+      The Mustang Circuit Tour, also known as the Mustang Round Trek, is a classic expedition-style journey through the mystical and remote region of Upper Mustang in Nepal, centered around the ancient kingdom of Lo, with its dramatic landscapes and towering peaks. This challenging trek in western Nepal offers a full adventure and off-the-beaten-path experience in one of the country’s most unspoiled and culturally rich regions. The Mustang Circuit itinerary traverses serene, isolated terrains filled with natural beauty, crossing high desert plateaus, rugged canyons, and high passes with breathtaking viewpoints. The route provides constant views of the Annapurna and Dhaulagiri ranges while passing through ancient walled villages, monasteries, and striking desert landscapes shaped by wind and time. Our 20-day Mustang Circuit Tour is a fully guided and supported trek with camping and guesthouse accommodations throughout. The journey begins with a short flight to Pokhara, followed by a scenic flight to Jomsom the next day. The trek commences from Jomsom, following a carefully crafted itinerary designed to balance adventure, cultural immersion, and acclimatization.
     </p>
   );
 };

@@ -27,8 +27,8 @@ export default function ReturnTrip() {
   const popularTrips: Trip[] = [
     {
       id: "1",
-      departureCity: "Tansen",
-      arrivalCity: "Kathmandu",
+      departureCity: "Kathmandu",
+      arrivalCity: "Tansen",
       departureTime: "08:00 AM",
       arrivalTime: "12:00 PM",
       duration: "4h",
@@ -39,8 +39,8 @@ export default function ReturnTrip() {
     },
     {
       id: "2",
-      departureCity: "Kathmandu",
-      arrivalCity: "Lumbini",
+      departureCity: "Lumbini",
+      arrivalCity: "Tansen",
       departureTime: "09:00 AM",
       arrivalTime: "01:00 PM",
       duration: "4h",
@@ -51,8 +51,8 @@ export default function ReturnTrip() {
     },
     {
       id: "3",
-      departureCity: "Tansen",
-      arrivalCity: "Pokhara",
+      departureCity: "Pokhara",
+      arrivalCity: "Tansen",
       departureTime: "10:00 AM",
       arrivalTime: "03:00 PM",
       duration: "5h",
@@ -63,15 +63,15 @@ export default function ReturnTrip() {
     },
     {
       id: "4",
-      departureCity: "Pokhara",
-      arrivalCity: "Illam",
+      departureCity: "Bairabhwa",
+      arrivalCity: "Tansen",
       departureTime: "11:00 AM",
       arrivalTime: "04:00 PM",
       duration: "5h",
       price: "$80",
       busType: "Luxury Coach",
       image:
-        "https://images.unsplash.com/photo-1559715062-0951291e3156?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aWxsYW18ZW58MHx8MHx8fDA%3D",
+        "https://media.istockphoto.com/id/1326681895/photo/aerial-shot-of-houses-scattered-across-a-large-farmland-in-the-countryside-nepal.webp?a=1&b=1&s=612x612&w=0&k=20&c=nnMrDd-i6tkOICzLPhRgwx3X6dGeiHt5cmMlSjHwpL0=",
     },
   ];
 
@@ -81,20 +81,24 @@ export default function ReturnTrip() {
     title= "Return Trip"
     img="https://images.unsplash.com/photo-1561553521-de4fcbea79c1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRyaXB8ZW58MHx8MHx8fDA%3D"
     />
-    <main className="max-w-11/12 mx-auto py-8 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-3xl w-full text-center font-bold text-purple-800 mb-10">
-        Book Your Return Trip
-      </h1>
+    <main className="relative max-w-11/12 mx-auto py-8 px-4 sm:px-6 lg:px-8">
 
       {/* Form */}
       <ReturnTripForm/>
 
       {/* Popular Trips */}
-      <section className="w-full mx-auto py-10">
-        <h2 className="text-3xl font-bold text-purple-800 mb-6 text-center">
-          Popular Trips
+      <section className="w-full mx-auto mt-20 p-10 shadow-md rounded-lg">
+        <div className="flex items-center justify-between">
+        <h2 className="text-3xl font-bold text-purple-800 mb-6 text-start">
+          Return Trips
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
+        {/* <div>
+          <span>left</span>{" "}
+          <span>right</span>
+        </div> */}
+        </div>
+        
+        <div className="grid grid-cols-2">
           {popularTrips.map((trip) => (
             <TripCard key={trip.id} trip={trip} />
           ))}
