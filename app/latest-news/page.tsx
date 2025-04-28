@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { newsArticles, NewsArticle } from "./blogdata";
-// import CTA from "@/components/shared/CTA";
+import CTA from "@/components/shared/CTA";
 
 // Hero Component
 function Hero() {
@@ -67,11 +67,11 @@ export default function News() {
           ))}
         </section>
       </main>
-      {/* <CTA
+      <CTA
         title="Never Miss an Update"
         desc="Subscribe to our newsletter for the latest news, travel tips, and exclusive offers from Tansen Holidays."
         button="Subscribe Now"
-      /> */}
+      />
     </div>
   );
 }
