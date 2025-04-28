@@ -1,4 +1,3 @@
-"use client";
 import Banner from "@/components/shared/Banner";
 import PackageCard from "@/components/cards/packageCards";
 

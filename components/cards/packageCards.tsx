@@ -44,7 +44,7 @@ const PackageCard: React.FC<PackageCardProps> = ({ pkg }) => {
       </p>
     </div>
     <Link href="/booking">
-    <button className="w-full py-2.5 bg-purple-800 text-white rounded-md font-medium transition-all duration-200 hover:bg-purple-900 focus:outline-none focus:ring-2 focus:ring-purple-300">
+    <button className="w-full py-2.5 bg-purple-800 text-white rounded-md font-medium transition-all duration-200 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-purple-300">
       View Details
     </button>
     </Link>

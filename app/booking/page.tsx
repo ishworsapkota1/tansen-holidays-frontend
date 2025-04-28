@@ -55,7 +55,7 @@ export default function Home() {
               <Icon icon="ri:arrow-drop-down-line" className="absolute right-0 top-1/2 -translate-y-1/2 w-8 h-8 text-purple-900" />
             </div>
           </div>
-          <button className="bg-purple-800 text-white px-6 py-2 rounded-md hover:bg-purple-900 transition-colors">
+          <button className="bg-purple-800 text-white px-6 py-2 rounded-md hover:bg-indigo-700 transition-colors">
             Search
           </button>
         </form>

@@ -1,7 +1,6 @@
-"use client";
 import Banner from "@/components/shared/Banner";
+import CTA from "@/components/shared/CTA";
 import Image from "next/image";
-import Link from "next/link";
 import { FaBus, FaCar, FaShieldAlt, FaClock, FaWifi } from "react-icons/fa"; 
 
 
@@ -52,27 +51,6 @@ function ServiceFeature({ title, description, icon }: ServiceFeature) {
         <p className="text-sm text-gray-600 mt-1">{description}</p>
       </div>
     </div>
-  );
-}
-
-// Call-to-Action Component
-function CTA() {
-  return (
-    <section className="relative py-16 mb-10 text-center bg-[url(/roads.png)] bg-no-repeat bg-cover bg-center">
-      <div className="absolute inset-0 bg-black/40 z-0" />
-      <div className="relative z-10">
-        <h2 className="text-3xl font-bold text-white mb-4">Travel with Confidence</h2>
-        <p className="text-lg text-white max-w-2xl mx-auto mb-6">
-          Choose Tansen Holidays for safe, comfortable, and reliable transportation across Nepal.
-        </p>
-        <Link
-          href="/booking"
-          className="inline-block bg-indigo-600 text-white py-3 px-8 rounded-full text-base font-medium hover:bg-indigo-700 transition-colors duration-300"
-        >
-          Book Your Journey
-        </Link>
-      </div>
-    </section>
   );
 }
 
@@ -156,7 +134,11 @@ export default function Services() {
           </div>
         </section>
       </main>
-      <CTA />
+      <CTA
+      title="Travel with Confidence"
+      desc="Choose Tansen Holidays for safe, comfortable, and reliable transportation across Nepal."
+      button="Book Your Journey"
+      />
     </div>
   );
 }

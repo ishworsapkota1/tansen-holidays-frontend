@@ -18,7 +18,7 @@ export default function AboutUs() {
         <section className="mb-12 flex flex-col lg:flex-row items-center gap-8 max-w-5xl mx-auto">
           <div className="lg:w-1/2">
             <Image
-              src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60"
+              src="https://images.unsplash.com/photo-1471958680802-1345a694ba6d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8am91cm5leXxlbnwwfHwwfHx8MA%3D%3D"
               alt="Tansen Holidays Journey"
               height={100}
               width={100}

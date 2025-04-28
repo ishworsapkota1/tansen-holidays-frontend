@@ -303,7 +303,7 @@ export default Seat
 //                   </div>
 
 //                 <div className="mt-4">
-//                   <button className="w-full bg-purple-800 text-white py-2 rounded-md hover:bg-purple-900 transition-colors duration-200">
+//                   <button className="w-full bg-purple-800 text-white py-2 rounded-md hover:bg-indigo-700transition-colors duration-200">
 //                     Checkout
 //                   </button>
 //                 </div>

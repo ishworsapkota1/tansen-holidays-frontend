@@ -1,4 +1,3 @@
-// /app/check-seat/[id]/page.tsx
 import ClientBooking from "./ClientBooking";
 import { buses } from "@/data/buses"
 

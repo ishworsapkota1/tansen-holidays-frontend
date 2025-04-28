@@ -1,9 +1,6 @@
-"use client";
-
 import ReturnTripForm from "./tripForm";
 import TripCard from "@/components/cards/tripCards";
 import Banner from "@/components/shared/Banner";
-// import { useState } from "react";
 
 interface Trip {
   id: string;
@@ -79,7 +76,7 @@ export default function ReturnTrip() {
     <>
     <Banner
     title= "Return Trip"
-    img="https://images.unsplash.com/photo-1561553521-de4fcbea79c1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRyaXB8ZW58MHx8MHx8fDA%3D"
+    img="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=3221&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     />
     <main className="relative max-w-11/12 mx-auto py-8 px-4 sm:px-6 lg:px-8">
 
@@ -93,7 +90,7 @@ export default function ReturnTrip() {
           Return Trips
         </h2>
         {/* <div>
-          <span>left</span>{" "}
+          <span>left</span>
           <span>right</span>
         </div> */}
         </div>

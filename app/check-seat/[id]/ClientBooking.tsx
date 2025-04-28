@@ -248,7 +248,7 @@ export default function ClientBooking({ bus }: ClientBookingProps) {
                 </div>
               </div>
               <Link href={`/check-out/${bus.id}`}>
-                <button className="w-full bg-purple-800 text-white py-2 rounded-md hover:bg-purple-900 transition-colors mt-4">
+                <button className="w-full bg-purple-800 text-white py-2 rounded-md hover:bg-indigo-700 transition-colors mt-4">
                   Checkout
                 </button>
               </Link>
