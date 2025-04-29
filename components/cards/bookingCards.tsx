@@ -44,7 +44,7 @@ const policyOptions = [
 ];
 
 const Amenities = [
-  { icon: "fa6-solid:bottle-water", item: "Water Bottle" },
+  { icon: "💦", item: "Water Bottle" },
   { icon: "🛜", item: "WiFi" },
   { icon: "🔌", item: "Charging Point" },
   { icon: "🛌", item: "Blanket" },
