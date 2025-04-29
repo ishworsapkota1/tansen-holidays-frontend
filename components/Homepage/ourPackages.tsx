@@ -36,7 +36,7 @@ export const HolidayPackages = () => {
               <Image 
               src={pkg.image} 
               alt={pkg.name} 
-              className="w-full h-full object-cover group-hover:scale-110 transition-transform" 
+              className="w-full h-full object-cover group-hover:scale-110 duration-500 ease-out" 
               height={1000}
               width={1000} 
               />

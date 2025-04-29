@@ -28,7 +28,7 @@ const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle }) => {
           height={250}
           className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
         />
-        <div className="absolute top-3 right-3 bg-white/30 backdrop-blur-xs px-3 py-1 rounded-full text-xl font-medium text-purple-800 shadow-sm z-20">
+        <div className="absolute top-3 right-3 bg-white backdrop-blur-xs px-3 py-1 rounded-full text-xl font-medium text-primary-100 shadow-sm z-20">
           {vehicle.price}
         </div>
       </div>

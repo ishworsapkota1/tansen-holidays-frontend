@@ -15,7 +15,7 @@ import PackageReview from "@/components/PackageDetails/Review";
 const buttonLabels = [
   { label: "Overview", icon: "mdi:information-outline" },
   { label: "Itinerary", icon: "mdi:map-outline" },
-  { label: "Route Map", icon: "mdi:map-marker-path" },
+  // { label: "Route Map", icon: "mdi:map-marker-path" },
   { label: "Inclusions", icon: "mdi:check-circle-outline" },
   { label: "Exclusions", icon: "mdi:close-circle-outline" },
   { label: "Gallery", icon: "mdi:image-multiple-outline" },
@@ -26,6 +26,12 @@ const buttonLabels = [
 const ItineraryData = [
   { day: "Day 1", description: "Arrive in Kathmandu" },
   { day: "Day 2", description: "Drive to Muktinath" },
+  { day: "Day 3", description: "Drive to Muktinath kjbdfvie jsbdfbcedjdbsofjc  ieubfjb iubfb" },
+  { day: "Day 4", description: "Drive to Muktinath kjbdfvie jsbdfbcedjdbsofjc  ieubfjb iubfb" },
+  { day: "Day 5", description: "Drive to Muktinath kjbdfvie jsbdfbcedjdbsofjc  ieubfjb iubfb" },
+  { day: "Day 6", description: "Drive to Muktinath kjbdfvie jsbdfbcedjdbsofjc  ieubfjb iubfb jkbfre iwepfibn nwiehfnier iwhpefnc wiehfner iphwfne epiehfnerk eioerfhniev epihfio" },
+  { day: "Day 7", description: "Drive to Muktinath kjbdfvie jsbdfbcedjdbsofjc  ieubfjb iubfb" },
+  { day: "Day 8", description: "Drive to Muktinath kjbdfvie jsbdfbcedjdbsofjc  ieubfjb iubfb" },
 ];
 
 const Inclusion = [{ item: "Accommodation" }, { item: "Meals" }];
@@ -132,7 +138,7 @@ function PackageDetail() {
             </section>
 
             {/* Route Map */}
-            <section
+            {/* <section
               id="route-map"
               className="bg-white rounded-xl shadow-sm overflow-hidden"
             >
@@ -151,7 +157,7 @@ function PackageDetail() {
                   />
                 </div>
               </div>
-            </section>
+            </section> */}
 
             {/* Inclusions */}
             <section
@@ -297,7 +303,7 @@ function PackageDetail() {
                   <Link href="/booking">
                     <button className="w-full bg-purple-800 hover:bg-indigo-700 text-white py-3 px-4 rounded-md font-medium transition-colors flex items-center justify-center gap-2">
                       <Icon icon="mdi:check" className="w-5 h-5" />
-                      Book This Trek
+                      Book This Trip
                     </button>
                   </Link>
                   

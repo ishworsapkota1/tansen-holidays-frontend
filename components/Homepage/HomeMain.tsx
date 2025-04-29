@@ -7,16 +7,13 @@ import CTA from "../shared/CTA";
 
 const HomeMain = () => {
   return (
-    <>
+    <div className="bg-gray-50">
       <HeroSection />
       <ChooseVehicle />
       <WhyChooseTansen />
       <HolidayPackages />
-      <CTA
-      title="Plan Your Return Trip"
-      button="Book a Return Trip"
-      />
-    </>
+      <CTA title="Plan Your Return Trip" button="Book a Return Trip" />
+    </div>
   );
 };
 
