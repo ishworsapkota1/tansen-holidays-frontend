@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --primary-50: #FFF6F3;
-  --primary-100: #F1602A;
-  --purple-800: #4F2C7F;
-  --purple-900: #3B235D;
+  --primary-50: #fff6f3;
+  --primary-100: #f1602a;
+  --purple-800: #4f2c7f;
+  --purple-900: #3b235d;
 }
 
 @theme {
@@ -16,7 +16,7 @@
 
 /* Custom utilities for transparency */
 @utility bg-transparent-white {
-  background-color: rgba(255, 255, 255, 0.40);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 @utility backdrop-blur-custom {
