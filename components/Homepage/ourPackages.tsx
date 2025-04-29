@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const HolidayPackages = () => {
     const packages = [
@@ -25,7 +26,7 @@ export const HolidayPackages = () => {
     ];
   
     return (
-      <div className="py-12 px-8 bg-gray-50">
+      <div className="w-11/12 mx-auto py-12 px-8 ">
         <h2 className="text-3xl font-bold text-purple-800 mb-10">Our Holiday Packages</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
@@ -35,7 +36,7 @@ export const HolidayPackages = () => {
               <Image 
               src={pkg.image} 
               alt={pkg.name} 
-              className="w-full h-full object-cover" 
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform" 
               height={1000}
               width={1000} 
               />
@@ -60,9 +61,11 @@ export const HolidayPackages = () => {
               {/* Content */}
               <div className="absolute bottom-0 left-0 p-6 w-full">
                 <h3 className="text-2xl font-bold text-white mb-4">{pkg.name}</h3>
-                <button className="bg-black bg-opacity-60 text-white px-4 py-1 rounded-full text-sm border border-white">
+                <Link href="/package-details">
+                <button className="bg-black hover:bg-primary-100 bg-opacity-60 text-white px-4 py-1 rounded-full text-sm border border-white cursor-pointer">
                   Book now
                 </button>
+                </Link>
               </div>
             </div>
           ))}

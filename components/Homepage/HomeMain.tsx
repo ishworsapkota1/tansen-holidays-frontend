@@ -1,16 +1,23 @@
-import React from 'react'
-import HeroSection from './Hero'
-import { WhyChooseTansen } from './whyChooseUs'
-import { HolidayPackages } from './ourPackages'
+import React from "react";
+import HeroSection from "./Hero";
+import { WhyChooseTansen } from "./whyChooseUs";
+import { HolidayPackages } from "./ourPackages";
+import ChooseVehicle from "./chooseVehicle";
+import CTA from "../shared/CTA";
 
 const HomeMain = () => {
   return (
     <>
-    <HeroSection/>
-    <WhyChooseTansen/>
-    <HolidayPackages/>
+      <HeroSection />
+      <ChooseVehicle />
+      <WhyChooseTansen />
+      <HolidayPackages />
+      <CTA
+      title="Plan Your Return Trip"
+      button="Book a Return Trip"
+      />
     </>
-  )
-}
+  );
+};
 
-export default HomeMain
+export default HomeMain;
