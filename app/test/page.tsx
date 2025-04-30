@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-empty-object-type */
 "use client";
 import React, { useState, useEffect, useCallback, useRef, JSX } from "react";
 import { io, Socket } from "socket.io-client";
