@@ -16,7 +16,13 @@ export default async function BlogPostPage({ params }: Props) {
   }
 
   return (
-    <div className="w-full p-24 min-h-screen bg-gray-50">
+    <div className="relative w-full p-24 min-h-screen bg-gray-50">
+      <Link
+        href="/latest-news"
+        className="absolute left-[22%] underline inline-block text-indigo-600 text-sm font-medium hover:text-indigo-700 transition-colors duration-200"
+      >
+        Back to News
+      </Link>
       <main className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <article className="bg-white rounded-xl shadow-sm p-6 md:p-8">
           {post.image && (
@@ -40,12 +46,6 @@ export default async function BlogPostPage({ params }: Props) {
           <div className="prose prose-gray text-gray-800 max-w-none">
             <p>{post.content}</p>
           </div>
-          <Link
-            href="/latest-news"
-            className="mt-6 inline-block text-indigo-600 text-sm font-medium hover:text-indigo-700 transition-colors duration-200"
-          >
-            Back to News
-          </Link>
         </article>
       </main>
     </div>

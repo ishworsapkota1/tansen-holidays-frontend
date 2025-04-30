@@ -37,7 +37,7 @@ const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle }) => {
         <p className="text-sm text-gray-600 mb-4">{vehicle.description}</p>
         <Link href="/booking" className="block w-full">
           <button
-            className="w-full py-2.5 px-4 bg-purple-800 rounded-lg text-sm text-white font-medium transition-all duration-300 hover:shadow-md flex items-center gap-2 justify-center"
+            className="w-full py-2.5 px-4 bg-purple-800 hover:bg-primary-100 rounded-lg text-sm text-white font-medium transition-all duration-300 hover:shadow-md flex items-center gap-2 justify-center"
           >
             <span>Select This Vehicle</span>
             <Icon icon="hugeicons:arrow-right-02" className="text-xl"/>

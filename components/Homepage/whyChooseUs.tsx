@@ -29,7 +29,7 @@ export const WhyChooseTansen = () => {
 
   return (
     <section className="py-16 ">
-      <div className="max-w-11/12 mx-auto px-8">
+      <div className="max-w-11/12 mx-auto px-3">
         {/* Single card container */}
         <div className="rounded-2xl border bg-white border-gray-50 shadow-sm overflow-hidden p-8">
           {/* Card header */}

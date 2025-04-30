@@ -1,6 +1,6 @@
 "use client";
-
 import Image from "next/image";
+import Link from "next/link";
 
 interface Trip {
   id: string;
@@ -33,7 +33,7 @@ const TripCard: React.FC<TripCardProps> = ({ trip }) => {
               className="w-40 h-40 object-cover"
             />
           </div>
-
+          
           {/* Content in the middle */}
           <div className="md:w-2/3 p-4">
             <h3 className="text-lg font-semibold text-gray-900">
@@ -48,14 +48,23 @@ const TripCard: React.FC<TripCardProps> = ({ trip }) => {
             </div>
             <p className="text-lg font-bold text-green-600">{trip.price}</p>
           </div>
-
+          
           <div className="h-10/12 border self-center border-gray-300"/>
-
-          {/* Button on the right */}
-          <div className="md:w-1/6 p-4 flex items-end justify-center">
-            <button className="w-full bg-purple-800 text-white py-2 px-3 rounded-md text-sm font-medium hover:bg-indigo-700 transition-colors duration-300">
+          
+          {/* Button on the right with 50% off label */}
+          <div className="md:w-1/6 p-4 flex flex-col items-center justify-between">
+            <div className="flex items-center justify-center w-full">
+              <Image src="/image.png"
+              alt="discount"
+              width={100}
+              height={100}
+               className="transform rotate-6"/>
+            </div>
+            <Link href="/booking">
+            <button className="w-full bg-purple-800 text-white py-2 px-3 rounded-md text-sm font-medium hover:bg-primary-100 transition-colors duration-300">
               Select
             </button>
+            </Link>
           </div>
         </div>
       </div>

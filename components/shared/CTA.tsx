@@ -4,7 +4,7 @@ import React from "react";
 type CTAProps = {
   title: string;
   desc?: string;
-  button: string;
+  button?: string;
 };
 
 const CTA = ({ title, desc, button }: CTAProps) => {
@@ -16,12 +16,12 @@ const CTA = ({ title, desc, button }: CTAProps) => {
         {desc && (
           <p className="text-lg text-white max-w-2xl mx-auto mb-6">{desc}</p>
         )}
-        <Link
+        {button && (<Link
           href="/booking"
-          className="inline-block bg-purple-800 text-white py-3 px-8 rounded-full text-base font-medium hover:bg-indigo-600 transition-colors duration-300"
+          className="inline-block bg-purple-800 text-white py-3 px-8 rounded-full text-base font-medium hover:bg-primary-100 transition-colors duration-300"
         >
           {button}
-        </Link>
+        </Link>)}
       </div>
     </section>
   );

@@ -30,6 +30,30 @@ const HeroSection = () => {
     { from: "Bairabhwa", to: "Tansen" },
     { from: "Pokhara", to: "Tansen" },
   ];
+  
+  // User avatars from Unsplash
+  const userAvatars = [
+    {
+      src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop",
+      alt: "Woman with brown hair"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=100&auto=format&fit=crop",
+      alt: "Man with beard"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100&auto=format&fit=crop",
+      alt: "Woman with glasses"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop",
+      alt: "Smiling man"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=100&auto=format&fit=crop",
+      alt: "Woman with hat"
+    },
+  ];
 
   const [fromLocation, setFromLocation] = useState<RouteLocation>("Tansen");
   const [toLocation, setToLocation] = useState<RouteLocation>("Kathmandu");
@@ -68,18 +92,18 @@ const HeroSection = () => {
               Safe, comfortable, and affordable bus travel across Nepal
             </p>
 
-            {/* Top Popular Routes */}
-            <div className="mt-6 flex justify-center">
-              <div className="px-4 py-3 bg-white/15 backdrop-blur-md rounded-xl border border-white/20 shadow-lg">
-                <p className="text-white text-xs font-medium mb-2">
+            {/* Enhanced Popular Routes */}
+            <div className="mt-8 flex justify-center">
+              <div className="px-6 py-4 bg-white/20 backdrop-blur-md rounded-xl border border-white/20 shadow-lg">
+                <p className="text-white text-sm font-medium mb-3">
                   Popular Routes:
                 </p>
-                <div className="flex flex-wrap gap-2 justify-center">
+                <div className="flex flex-wrap gap-3 justify-center">
                   {popularRoutes.map((route, index) => (
                     <button
                       key={index}
                       onClick={() => handleSelectRoute(route.from, route.to)}
-                      className="px-3 py-1 text-xs bg-purple-800/30 hover:bg-blue-600/10 text-white rounded-lg transition-all duration-300 border border-blue-400/30"
+                      className="px-3 py-2 text-sm bg-green-600/60 hover:bg-green-600 text-white rounded-lg transition-all duration-300 border border-green-400/50 shadow-md font-medium"
                     >
                       {route.from} — {route.to}
                     </button>
@@ -191,7 +215,7 @@ const HeroSection = () => {
 
               {/* Call to Action Button */}
               <Link href="/booking">
-                <button className="bg-primary-100 hover:bg-indigo-600 text-white px-5 py-3 rounded-lg font-medium transition-all duration-300 shadow-md hover:shadow-lg flex-shrink-0 text-sm">
+                <button className="bg-primary-100 hover:bg-purple-800 text-white px-5 py-3 rounded-lg font-medium transition-all duration-300 shadow-md hover:shadow-lg flex-shrink-0 text-sm">
                   Check Seat Availability
                 </button>
               </Link>
@@ -202,14 +226,14 @@ const HeroSection = () => {
               {/* User Avatars */}
               <div className="flex items-center">
                 <div className="flex -space-x-2 mr-3">
-                  {[...Array(5)].map((_, i) => (
+                  {userAvatars.map((avatar, i) => (
                     <div
                       key={i}
                       className="w-6 h-6 rounded-full bg-blue-200 border-2 border-white overflow-hidden shadow-sm"
                     >
                       <Image
-                        src="/avatar.jpg"
-                        alt="User"
+                        src={avatar.src}
+                        alt={avatar.alt}
                         className="w-full h-full object-cover"
                         height={100}
                         width={100}

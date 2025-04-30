@@ -109,7 +109,7 @@ export default function Services() {
       title="Our Services"
       img="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
       />
-      <main className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <main className="max-w-11/12 mx-auto py-12 px-3">
         {/* Service Categories */}
         <section className="py-12">
           <h2 className="text-3xl font-bold text-purple-800 text-center mb-10 tracking-tight">

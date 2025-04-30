@@ -26,9 +26,13 @@ export const HolidayPackages = () => {
     ];
   
     return (
-      <div className="w-11/12 mx-auto py-12 px-8 ">
+      <div className="w-11/12 mx-auto py-12 px-3 ">
+        <div className="flex items-center justify-between">
         <h2 className="text-3xl font-bold text-purple-800 mb-10">Our Holiday Packages</h2>
-        
+        <Link href="/holiday-packages">
+        <p className="underline mb-11 text-purple-800 hover:text-primary-100">View all</p>
+        </Link>
+        </div>        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
           {packages.map((pkg, index) => (
             <div key={index} className="relative rounded-lg overflow-hidden h-[50vh] shadow-md group">

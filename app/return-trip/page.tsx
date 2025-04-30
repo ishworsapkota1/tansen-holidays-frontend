@@ -78,7 +78,7 @@ export default function ReturnTrip() {
     title= "Return Trip"
     img="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=3221&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     />
-    <main className="relative max-w-11/12 mx-auto py-8 px-4 sm:px-6 lg:px-8">
+    <main className="relative w-11/12 mx-auto py-8 px-3">
 
       {/* Form */}
       <ReturnTripForm/>

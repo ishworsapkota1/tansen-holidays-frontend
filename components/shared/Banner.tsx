@@ -6,8 +6,9 @@ type bannerprops = {
   img: string;
   title?: string | ReactNode;
   className?: string;
+  button?: string;
 };
-const Banner = ({ img, title, className }: bannerprops) => {
+const Banner = ({ img, title, className, button }: bannerprops) => {
   return (
     <div className={`relative w-full h-[50vh] md:h-[60vh] overflow-hidden ${className}`}>
       <Image
@@ -25,12 +26,12 @@ const Banner = ({ img, title, className }: bannerprops) => {
         <p className="text-lg md:text-xl text-gray-100 mt-4 max-w-3xl">
           Discover seamless travel with Tansen Holidays—offering reliable, comfortable, and modern transportation across Nepal.
         </p>
-        <Link
-          href="/booking"
+        {button && (<Link
+          href="/our-services"
           className="mt-6 bg-white text-indigo-600 py-3 px-8 rounded-full text-base font-medium hover:bg-indigo-100 transition-colors duration-300"
         >
           Explore Services
-        </Link>
+        </Link>)}
       </div>
     </div>
   );

@@ -43,8 +43,8 @@ const PackageCard: React.FC<PackageCardProps> = ({ pkg }) => {
         {pkg.description}
       </p>
     </div>
-    <Link href="/booking">
-    <button className="w-full py-2.5 bg-purple-800 text-white rounded-md font-medium transition-all duration-200 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-purple-300">
+    <Link href="/package-details">
+    <button className="w-full py-2.5 bg-purple-800 text-white rounded-md font-medium transition-all duration-200 hover:bg-primary-100 focus:outline-none focus:ring-2 focus:ring-purple-300">
       View Details
     </button>
     </Link>

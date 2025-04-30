@@ -131,9 +131,10 @@ export default function HolidayPackages() {
   <Banner
     className="h-[40vh] relative shadow-lg"
     title="Holiday Packages"
+    button="Our Services"
     img="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=60"
   />
-  <main className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+  <main className="max-w-11/12 mx-auto py-12 px-3">
     <section className="w-full mx-auto">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {packages.map((pkg) => (

@@ -76,7 +76,7 @@ const ReturnTripForm = ({  }) => {
         <Link href="/booking" className="flex items-end">
         <button
           type="submit"
-          className="w-full bg-purple-800 text-white py-3 rounded-md text-sm font-medium hover:bg-indigo-700 transition-colors duration-300"
+          className="w-full bg-purple-800 text-white py-3 rounded-md text-sm font-medium hover:bg-primary-100 transition-colors duration-300"
         >
           Check Return Trips
         </button>

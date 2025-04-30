@@ -57,7 +57,7 @@ export default function News() {
   return (
     <div className="w-full min-h-screen bg-gray-50">
       <Hero />
-      <main className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <main className="max-w-11/12 mx-auto py-12 px-3">
         <h2 className="text-3xl font-bold text-purple-800 mb-10">
           Recent Updates
         </h2>

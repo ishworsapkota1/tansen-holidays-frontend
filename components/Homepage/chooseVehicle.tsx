@@ -28,7 +28,7 @@ export default function ChooseVehicle() {
       id: "1",
       name: "Luxury Bus",
       description: "Premium seating, Wi-Fi, and AC for up to 35 passengers.",
-      price: "$95",
+      price: "Rs 950",
       image: bus,
       type: "Buses"
     },
@@ -36,7 +36,7 @@ export default function ChooseVehicle() {
       id: "6",
       name: "Premium SUV",
       description: "Spacious luxury SUV with panoramic roof and leather seats.",
-      price: "$65",
+      price: "Rs 650",
       image: scorpio,
       type: "SUVs"
     },
@@ -44,8 +44,8 @@ export default function ChooseVehicle() {
       id: "3",
       name: "EV-Van",
       description: "Eco-friendly electric van with modern amenities and smooth ride.",
-      price: "$80",
-      image: "https://img.freepik.com/premium-photo/white-small-minivan-transportation-people-three-dimensional-illustration-glossy-white-surface_101266-1356.jpg?ga=GA1.1.1946619087.1744953972&semt=ais_hybrid&w=740",
+      price: "Rs 800",
+      image: "https://media.istockphoto.com/id/155374050/photo/white-delivery-van-with-clean-blank-side-isolated.webp?a=1&b=1&s=612x612&w=0&k=20&c=oCe2ITUoqnlED0Px7m8suSqP8DRe8e_VTpOqthR71wU=",
       type: "EVs"
     },  
     
@@ -53,7 +53,7 @@ export default function ChooseVehicle() {
       id: "5",
       name: "SUV",
       description: "Rugged SUV perfect for adventure trips and rough terrain.",
-      price: "$40",
+      price: "Rs 400",
       image: suv,
       type: "SUVs"
     },
@@ -61,7 +61,7 @@ export default function ChooseVehicle() {
       id: "7",
       name: "Hiace",
       description: "Compact and cozy micro bus for small groups of up to 15 passengers.",
-      price: "$60",
+      price: "Rs 600",
       image: hiace,
       type: "Micro Bus"
     },
@@ -69,7 +69,7 @@ export default function ChooseVehicle() {
       id: "2",
       name: "Standard Bus",
       description: "Comfortable seating for up to 40 passengers. Ideal for short trips.",
-      price: "$50",
+      price: "Rs 500",
       image: "https://images.unsplash.com/photo-1650308767515-b7c63bb55fa1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjM4fHxidXMlMjBpbmRpYXxlbnwwfHwwfHx8MA%3D%3D",
       type: "Buses"
     },
@@ -77,7 +77,7 @@ export default function ChooseVehicle() {
       id: "8",
       name: "Deluxe Hiace",
       description: "Top-tier micro bus with entertainment system and extra legroom.",
-      price: "$85",
+      price: "Rs 850",
       image: "https://img.freepik.com/premium-photo/transport-van_981168-1934.jpg?ga=GA1.1.1946619087.1744953972&semt=ais_hybrid&w=740",
       type: "Micro Bus"
     },
@@ -85,7 +85,7 @@ export default function ChooseVehicle() {
       id: "4",
       name: "Electric Shuttle",
       description: "Zero-emission shuttle with USB charging and comfortable seats.",
-      price: "$75",
+      price: "Rs 750",
       image: ev,
       type: "EVs"
     },
@@ -102,7 +102,7 @@ export default function ChooseVehicle() {
   };
 
   return (
-    <main className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <main className="max-w-11/12 mx-auto py-12 px-3">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-10 gap-4">
         <div>
           <h2 className="text-3xl font-bold text-purple-800">Choose Your Vehicle</h2>
@@ -113,7 +113,7 @@ export default function ChooseVehicle() {
             {vehicleTypes.map((type) => (
               <button
                 key={type}
-                className={`px-4 py-2 text-sm font-medium rounded-md transition-colors duration-300 whitespace-nowrap ${
+                className={`px-4 py-2 text-sm font-medium rounded-md transition-colors duration-300 whitespace-nowrap Rs {
                   activeTab === type 
                     ? "bg-purple-100 text-purple-800" 
                     : "text-gray-600 hover:text-purple-800"

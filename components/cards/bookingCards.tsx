@@ -141,7 +141,7 @@ const BusCard = ({ bus }: BusCardProps) => {
             ))}
           </div>
           <Link href={`/check-seat/${bus.id}`}>
-            <button className="bg-purple-800 hover:bg-indigo-700 text-white px-5 py-2 rounded-md font-medium transition-colors">
+            <button className="bg-purple-800 hover:bg-primary-100 text-white px-5 py-2 rounded-md font-medium transition-colors">
               SELECT SEATS
             </button>
           </Link>

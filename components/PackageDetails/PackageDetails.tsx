@@ -301,7 +301,7 @@ function PackageDetail() {
 
                 <div className="mt-8 flex flex-col gap-2">
                   <Link href="/booking">
-                    <button className="w-full bg-purple-800 hover:bg-indigo-700 text-white py-3 px-4 rounded-md font-medium transition-colors flex items-center justify-center gap-2">
+                    <button className="w-full bg-purple-800 hover:bg-primary-100 text-white py-3 px-4 rounded-md font-medium transition-colors flex items-center justify-center gap-2">
                       <Icon icon="mdi:check" className="w-5 h-5" />
                       Book This Trip
                     </button>
