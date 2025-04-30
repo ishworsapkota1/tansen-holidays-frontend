@@ -113,7 +113,7 @@ export default function ChooseVehicle() {
             {vehicleTypes.map((type) => (
               <button
                 key={type}
-                className={`px-4 py-2 text-sm font-medium rounded-md transition-colors duration-300 whitespace-nowrap Rs {
+                className={`px-4 py-2 text-sm font-medium rounded-md transition-colors duration-300 whitespace-nowrap ${
                   activeTab === type 
                     ? "bg-purple-100 text-purple-800" 
                     : "text-gray-600 hover:text-purple-800"
