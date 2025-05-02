@@ -12,7 +12,7 @@ const HomeMain = () => {
       <ChooseVehicle />
       <WhyChooseTansen />
       <HolidayPackages />
-      <CTA title="Plan Your Return Trip" button="Book a Return Trip" />
+      <CTA title="Plan Your Return Trip" button="Book a Return Trip" path="/return-trip" />
     </div>
   );
 };

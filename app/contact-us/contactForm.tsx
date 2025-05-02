@@ -128,7 +128,7 @@ export default function ContactForm() {
                 type="text"
                 id="name"
                 name="name"
-                placeholder="Your full name"
+                placeholder="Full name"
                 value={formData.name}
                 onChange={handleChange}
                 className={`mt-1 w-full rounded-lg border ${errors.name ? "border-red-500" : "border-gray-300"} shadow-sm p-2 focus:border-indigo-600 focus:ring-indigo-600`}
@@ -143,7 +143,7 @@ export default function ContactForm() {
                 type="tel"
                 id="phone"
                 name="phone"
-                placeholder="Your phone number"
+                placeholder="Phone number"
                 value={formData.phone}
                 onChange={handleChange}
                 className={`mt-1 w-full rounded-lg border ${errors.phone ? "border-red-500" : "border-gray-300"} shadow-sm p-2 focus:border-indigo-600 focus:ring-indigo-600`}
@@ -161,7 +161,7 @@ export default function ContactForm() {
               type="email"
               id="email"
               name="email"
-              placeholder="Your email address"
+              placeholder="Email address"
               value={formData.email}
               onChange={handleChange}
               className={`mt-1 w-full rounded-lg border ${errors.email ? "border-red-500" : "border-gray-300"} shadow-sm p-2 focus:border-indigo-600 focus:ring-indigo-600`}

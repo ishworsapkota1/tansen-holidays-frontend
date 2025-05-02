@@ -29,10 +29,6 @@ const nextConfig: NextConfig = {
         hostname: "img.freepik.com",
       },
     ],
-    domains: [
-      "plus.unsplash.com",
-      "res.cloudinary.com",
-    ],
   },
 };
 
