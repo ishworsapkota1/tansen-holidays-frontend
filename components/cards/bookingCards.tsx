@@ -2,6 +2,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import { buses } from "@/data/buses";
+import Image from "next/image";
+import { IoMdAdd } from "react-icons/io";
+import { RiSubtractFill } from "react-icons/ri";
 
 // Define types for bus data
 interface Bus {
@@ -17,6 +20,7 @@ interface Bus {
   liveTracking: boolean;
   seatsLeft: number;
   windowSeats: number;
+  image: string;
 }
 
 // Props type for BusCard
@@ -51,9 +55,23 @@ const Amenities = [
   { icon: "💡", item: "Reading Light" },
 ];
 
+const Photos = [
+  { id: 1, image: "/whytansen/comfortableseats.png" },
+  { id: 2, image: "/whytansen/AC.png" },
+  { id: 3, image: "/whytansen/exeperience.png" },
+];
+
 const BusCard = ({ bus }: BusCardProps) => {
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [activePolicy, setActivePolicy] = useState<string | null>(null);
+  const [count, setCount] = useState<number>(0);
+  const handleAdd = () => {
+    setCount((prev) => prev + 1);
+  };
+
+  const handleRemove = () => {
+    setCount((prev) => (prev ? prev - 1 : 0)); //
+  };
 
   // Toggle category
   const toggleCategory = (categoryId: string) => {
@@ -75,12 +93,23 @@ const BusCard = ({ bus }: BusCardProps) => {
     <div className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
       {/* Bus info */}
       <div className="p-4">
+        <div className=" flex items-center justify-center">
+          <Image
+            src={bus.image}
+            alt="name"
+            width={400}
+            height={400}
+            className="w-100 h-50 object-contain "
+          />
+        </div>
+
         <div className="flex flex-col space-y-3">
           <div className="flex items-center justify-between">
             <div className="flex flex-col">
               <h3 className="text-xl font-semibold text-gray-800">
                 {bus.operator}
               </h3>
+
               <p className="text-sm text-gray-500">{bus.type}</p>
             </div>
             <div className="text-center">
@@ -91,7 +120,7 @@ const BusCard = ({ bus }: BusCardProps) => {
               <div className="text-lg font-medium">{bus.date}</div>
             </div>
             <div className="text-2xl font-bold text-purple-800">
-              Rs {bus.price}
+              {bus.price}
             </div>
           </div>
           <div className="flex justify-between items-center">
@@ -132,7 +161,7 @@ const BusCard = ({ bus }: BusCardProps) => {
                 onClick={() => toggleCategory(category.id)}
                 className={`px-3 py-1 rounded-md text-sm font-medium transition-all ${
                   activeCategory === category.id
-                    ? "bg-blue-500 text-white"
+                    ? "bg-orange-300 text-black"
                     : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                 }`}
               >
@@ -140,6 +169,19 @@ const BusCard = ({ bus }: BusCardProps) => {
               </button>
             ))}
           </div>
+          <button
+            onClick={handleAdd}
+            className="bg-purple-800 hover:bg-primary-100 text-white px-5 py-2 rounded-md font-medium transition-colors"
+          >
+            <IoMdAdd />
+          </button>
+          <p>Count:{count}</p>
+          <button
+            onClick={handleRemove}
+            className="bg-purple-800 hover:bg-primary-100 text-white px-5 py-2 rounded-md font-medium transition-colors"
+          >
+            <RiSubtractFill />
+          </button>
           <Link href={`/check-seat/${bus.id}`}>
             <button className="bg-purple-800 hover:bg-primary-100 text-white px-5 py-2 rounded-md font-medium transition-colors">
               SELECT SEATS
@@ -328,11 +370,18 @@ const BusCard = ({ bus }: BusCardProps) => {
                   Bus Photos
                 </h4>
                 <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
-                  {[...Array(3)].map((_, i) => (
+                  {Photos.map((photo) => (
                     <div
-                      key={i}
-                      className="h-24 bg-gray-200 rounded-md flex items-center justify-center text-gray-500"
-                    ></div>
+                      key={photo.id}
+                      className="relative h-24 w-full bg-gray-200 rounded-md overflow-hidden"
+                    >
+                      <Image
+                        src={photo.image}
+                        alt={`Photo ${photo.id}`}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
                   ))}
                 </div>
               </div>

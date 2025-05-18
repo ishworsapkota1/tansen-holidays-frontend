@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import { Link as ScrollLink } from "react-scroll";
@@ -26,12 +26,31 @@ const buttonLabels = [
 const ItineraryData = [
   { day: "Day 1", description: "Arrive in Kathmandu" },
   { day: "Day 2", description: "Drive to Muktinath" },
-  { day: "Day 3", description: "Drive to Muktinath kjbdfvie jsbdfbcedjdbsofjc  ieubfjb iubfb" },
-  { day: "Day 4", description: "Drive to Muktinath kjbdfvie jsbdfbcedjdbsofjc  ieubfjb iubfb" },
-  { day: "Day 5", description: "Drive to Muktinath kjbdfvie jsbdfbcedjdbsofjc  ieubfjb iubfb" },
-  { day: "Day 6", description: "Drive to Muktinath kjbdfvie jsbdfbcedjdbsofjc  ieubfjb iubfb jkbfre iwepfibn nwiehfnier iwhpefnc wiehfner iphwfne epiehfnerk eioerfhniev epihfio" },
-  { day: "Day 7", description: "Drive to Muktinath kjbdfvie jsbdfbcedjdbsofjc  ieubfjb iubfb" },
-  { day: "Day 8", description: "Drive to Muktinath kjbdfvie jsbdfbcedjdbsofjc  ieubfjb iubfb" },
+  {
+    day: "Day 3",
+    description: "Drive to Muktinath kjbdfvie jsbdfbcedjdbsofjc  ieubfjb iubfb",
+  },
+  {
+    day: "Day 4",
+    description: "Drive to Muktinath kjbdfvie jsbdfbcedjdbsofjc  ieubfjb iubfb",
+  },
+  {
+    day: "Day 5",
+    description: "Drive to Muktinath kjbdfvie jsbdfbcedjdbsofjc  ieubfjb iubfb",
+  },
+  {
+    day: "Day 6",
+    description:
+      "Drive to Muktinath kjbdfvie jsbdfbcedjdbsofjc  ieubfjb iubfb jkbfre iwepfibn nwiehfnier iwhpefnc wiehfner iphwfne epiehfnerk eioerfhniev epihfio",
+  },
+  {
+    day: "Day 7",
+    description: "Drive to Muktinath kjbdfvie jsbdfbcedjdbsofjc  ieubfjb iubfb",
+  },
+  {
+    day: "Day 8",
+    description: "Drive to Muktinath kjbdfvie jsbdfbcedjdbsofjc  ieubfjb iubfb",
+  },
 ];
 
 const Inclusion = [{ item: "Accommodation" }, { item: "Meals" }];
@@ -87,9 +106,14 @@ function PackageDetail() {
                 duration={500}
                 offset={offset}
                 spy={true}
-                onSetActive={() => setActiveSection(item.label.replace(/\s+/g, "-").toLowerCase())}
+                onSetActive={() =>
+                  setActiveSection(
+                    item.label.replace(/\s+/g, "-").toLowerCase()
+                  )
+                }
                 className={`flex items-center  gap-2 px-4 py-4 whitespace-nowrap transition-all ${
-                  activeSection === item.label.replace(/\s+/g, "-").toLowerCase()
+                  activeSection ===
+                  item.label.replace(/\s+/g, "-").toLowerCase()
                     ? "text-blue-600 border-b-2 border-blue-600 font-medium"
                     : "text-gray-500 hover:text-blue-600"
                 }`}
@@ -112,7 +136,10 @@ function PackageDetail() {
             >
               <div className="p-6">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                  <Icon icon="mdi:information-outline" className="w-6 h-6 mr-2 text-blue-600" />
+                  <Icon
+                    icon="mdi:information-outline"
+                    className="w-6 h-6 mr-2 text-blue-600"
+                  />
                   Overview
                 </h2>
                 <PackageOverview />
@@ -126,7 +153,10 @@ function PackageDetail() {
             >
               <div className="p-6">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                  <Icon icon="mdi:map-outline" className="w-6 h-6 mr-2 text-blue-600" />
+                  <Icon
+                    icon="mdi:map-outline"
+                    className="w-6 h-6 mr-2 text-blue-600"
+                  />
                   Itinerary
                 </h2>
                 <div className="space-y-4">
@@ -166,7 +196,10 @@ function PackageDetail() {
             >
               <div className="p-6">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                  <Icon icon="mdi:check-circle-outline" className="w-6 h-6 mr-2 text-blue-600" />
+                  <Icon
+                    icon="mdi:check-circle-outline"
+                    className="w-6 h-6 mr-2 text-blue-600"
+                  />
                   Inclusions
                 </h2>
                 <div className="space-y-2">
@@ -184,7 +217,10 @@ function PackageDetail() {
             >
               <div className="p-6">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                  <Icon icon="mdi:close-circle-outline" className="w-6 h-6 mr-2 text-blue-600" />
+                  <Icon
+                    icon="mdi:close-circle-outline"
+                    className="w-6 h-6 mr-2 text-blue-600"
+                  />
                   Exclusions
                 </h2>
                 <div className="space-y-2">
@@ -202,7 +238,10 @@ function PackageDetail() {
             >
               <div className="p-6">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                  <Icon icon="mdi:image-multiple-outline" className="w-6 h-6 mr-2 text-blue-600" />
+                  <Icon
+                    icon="mdi:image-multiple-outline"
+                    className="w-6 h-6 mr-2 text-blue-600"
+                  />
                   Gallery
                 </h2>
                 <PackageGallery />
@@ -216,7 +255,10 @@ function PackageDetail() {
             >
               <div className="p-6">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                  <Icon icon="mdi:calendar" className="w-6 h-6 mr-2 text-blue-600" />
+                  <Icon
+                    icon="mdi:calendar"
+                    className="w-6 h-6 mr-2 text-blue-600"
+                  />
                   Fixed Dates
                 </h2>
                 <div className="overflow-x-auto">
@@ -227,7 +269,9 @@ function PackageDetail() {
                         <th className="px-4 py-3 font-medium">Duration</th>
                         <th className="px-4 py-3 font-medium">Status</th>
                         <th className="px-4 py-3 font-medium">Price</th>
-                        <th className="px-4 py-3 font-medium text-right">Action</th>
+                        <th className="px-4 py-3 font-medium text-right">
+                          Action
+                        </th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-200">
@@ -263,7 +307,10 @@ function PackageDetail() {
             >
               <div className="p-6">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                  <Icon icon="mdi:star-outline" className="w-6 h-6 mr-2 text-blue-600" />
+                  <Icon
+                    icon="mdi:star-outline"
+                    className="w-6 h-6 mr-2 text-blue-600"
+                  />
                   Client Reviews
                 </h2>
                 <PackageReview />
@@ -275,7 +322,9 @@ function PackageDetail() {
           <div className="w-full lg:w-1/3">
             <div className="sticky top-32 bg-white rounded-xl shadow-sm overflow-hidden">
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Pricing</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Pricing
+                </h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center pb-4 border-b border-gray-200">
                     <span className="text-gray-600">1 person</span>
@@ -306,7 +355,7 @@ function PackageDetail() {
                       Book This Trip
                     </button>
                   </Link>
-                  
+
                   <ScrollLink
                     to="fixed-dates"
                     smooth={true}
@@ -324,11 +373,15 @@ function PackageDetail() {
                 <div className="mt-8">
                   <div className="bg-blue-50 rounded-lg p-4">
                     <h4 className="font-medium text-blue-800 mb-2 flex items-center gap-2">
-                      <Icon icon="mdi:help-circle-outline" className="w-5 h-5" />
+                      <Icon
+                        icon="mdi:help-circle-outline"
+                        className="w-5 h-5"
+                      />
                       Need Help?
                     </h4>
                     <p className="text-sm text-blue-700 mb-3">
-                      Our travel experts are available 24/7 to assist you with your booking.
+                      Our travel experts are available 24/7 to assist you with
+                      your booking.
                     </p>
                     <button className="flex items-center gap-2 text-blue-700 font-medium text-sm">
                       <Icon icon="mdi:phone" className="w-4 h-4" />

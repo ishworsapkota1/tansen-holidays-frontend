@@ -3,9 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-
-
-const ReturnTripForm = ({  }) => {
+const ReturnTripForm = ({}) => {
   const [origin, setOrigin] = useState("");
   const [destination, setDestination] = useState("Tansen");
   const [returnDate, setReturnDate] = useState("");
@@ -16,7 +14,7 @@ const ReturnTripForm = ({  }) => {
   //   onSearch({ origin, destination, returnDate, passengers });
   // };
 
-  const today = new Date().toISOString().split('T')[0];
+  const today = new Date().toISOString().split("T")[0];
 
   return (
     <form
@@ -74,12 +72,12 @@ const ReturnTripForm = ({  }) => {
           />
         </div> */}
         <Link href="/booking" className="flex items-end">
-        <button
-          type="submit"
-          className="w-full bg-purple-800 text-white py-3 rounded-md text-sm font-medium hover:bg-primary-100 transition-colors duration-300"
-        >
-          Check Return Trips
-        </button>
+          <button
+            type="submit"
+            className="w-full bg-purple-800 text-white py-3 rounded-md text-sm font-medium hover:bg-primary-100 transition-colors duration-300"
+          >
+            Check Return Trips
+          </button>
         </Link>
       </div>
     </form>

@@ -1,12 +1,11 @@
 // components/Footer.tsx
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 import { Icon } from "@iconify/react";
 // import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaYoutube, FaTwitter } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
-
   // Static links and information
   const aboutUsLinks = [
     { name: "About", href: "/about" },
@@ -14,7 +13,7 @@ const Footer: React.FC = () => {
     { name: "Why Us", href: "/why-us" },
     { name: "FAQs", href: "/faqs" },
     { name: "Sitemaps", href: "/sitemaps" },
-    { name: "Contact", href: "/contact" }
+    { name: "Contact", href: "/contact" },
   ];
 
   const usefulLinks = [
@@ -22,7 +21,7 @@ const Footer: React.FC = () => {
     { name: "Blog", href: "/blog" },
     { name: "Tours", href: "/tours" },
     { name: "Taxi", href: "/taxi" },
-    { name: "Tansen Yatayat", href: "/tansen-yatayat" }
+    { name: "Tansen Yatayat", href: "/tansen-yatayat" },
   ];
 
   const topRoutes = [
@@ -30,14 +29,14 @@ const Footer: React.FC = () => {
     { name: "Tansen - Kathmandu", href: "/routes/tansen-kathmandu" },
     { name: "Kathmandu - Tansen", href: "/routes/kathmandu-tansen" },
     { name: "Bairabhwa - Tansen", href: "/routes/bairabhwa-tansen" },
-    { name: "Pokhara - Tansen", href: "/routes/pokhara-tansen" }
+    { name: "Pokhara - Tansen", href: "/routes/pokhara-tansen" },
   ];
 
   const contactDetails = [
     { title: "+977 9749762222" },
     { title: "01-42565321" },
     { title: "info@tansenholidays.com" },
-    { title: "book@tansenholidays.com" }
+    { title: "book@tansenholidays.com" },
   ];
 
   const socialLinks = [
@@ -49,13 +48,11 @@ const Footer: React.FC = () => {
   const partners = [
     { img: "/Payment/khalti.png", name: "Khalti" },
     { img: "/Payment/esewa.png", name: "eSewa" },
-    { img: "/Payment/fonepay.png", name: "Fonepay" }
+    { img: "/Payment/fonepay.png", name: "Fonepay" },
   ];
 
   return (
-    <footer
-      className="bg-white relative "
-    >
+    <footer className="bg-white relative ">
       <Image
         src="/Footer/footer.webp"
         alt="footer-img"
@@ -65,26 +62,28 @@ const Footer: React.FC = () => {
       />
 
       {/* Partners Section */}
-      <div className="flex flex-col items-center gap-14 text-center relative z-[2]">
+      <div className="flex flex-col items-center gap-14 text-center relative z-[2] py-12">
         <div className="w-11/12 flex justify-between items-center gap-10 mx-auto">
-          <div className=' w-full border border-dashed h-px border-zinc-400'/>
-          <p className="w-fit text-nowrap text-[rgba(241,96,42,1)] text-3xl font-medium">Associated partner</p>
-          <div className='w-full border border-dashed h-px border-zinc-400'/>
+          <div className=" w-full border border-dashed h-px border-zinc-400" />
+          <p className="w-fit text-nowrap text-[rgba(241,96,42,1)] text-3xl font-medium">
+            Associated partner
+          </p>
+          <div className="w-full border border-dashed h-px border-zinc-400" />
         </div>
-        
+
         <div className="flex justify-center items-center gap-20 mb-8 max-w-4xl mx-auto">
           {partners.map((partner, index) => (
             <div key={index} className="w-40">
-              <Image 
-                src={partner.img} 
-                alt={partner.name} 
-                width={160} 
-                height={80} 
+              <Image
+                src={partner.img}
+                alt={partner.name}
+                width={160}
+                height={80}
               />
             </div>
           ))}
         </div>
-        <div className='w-11/12 border border-dashed h-px border-zinc-400 mx-auto'/>
+        <div className="w-11/12 border border-dashed h-px border-zinc-400 mx-auto" />
       </div>
 
       {/* Footer Links Section */}
@@ -108,7 +107,9 @@ const Footer: React.FC = () => {
 
         {/* Useful Links Column */}
         <div>
-          <h3 className="text-gray-700 text-xl font-medium mb-4">Useful Links</h3>
+          <h3 className="text-gray-700 text-xl font-medium mb-4">
+            Useful Links
+          </h3>
           <div className="space-y-2">
             {usefulLinks.map((item, index) => (
               <div key={index}>
@@ -142,7 +143,9 @@ const Footer: React.FC = () => {
 
         {/* Contact Info Column */}
         <div>
-          <h3 className="text-gray-700 text-xl font-medium mb-4">Contact Info</h3>
+          <h3 className="text-gray-700 text-xl font-medium mb-4">
+            Contact Info
+          </h3>
           <div className="space-y-2">
             {contactDetails.map((item, index) => (
               <div key={index}>
@@ -156,8 +159,12 @@ const Footer: React.FC = () => {
 
         {/* Social Links Column */}
         <div>
-          <h3 className="text-gray-700 text-xl font-medium mb-4">Social Links</h3>
-          <p className="font-medium text-sm text-zinc-600 mb-4">+977 9749762222</p>
+          <h3 className="text-gray-700 text-xl font-medium mb-4">
+            Social Links
+          </h3>
+          <p className="font-medium text-sm text-zinc-600 mb-4">
+            +977 9749762222
+          </p>
           <div className="flex gap-4">
             {socialLinks.map((item, index) => (
               <Link
@@ -184,11 +191,11 @@ const Footer: React.FC = () => {
           <p>Designed and Developed By</p>
           <span>
             <Image
-            src="/Logo/webx.png"
-            alt=''
-            height={50}
-            width={50}
-            className=''
+              src="/Logo/webx.png"
+              alt=""
+              height={50}
+              width={50}
+              className=""
             />
           </span>
         </div>

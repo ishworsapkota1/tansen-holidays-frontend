@@ -12,6 +12,7 @@ export interface Bus {
   liveTracking: boolean;
   seatsLeft: number;
   windowSeats: number;
+  image: string;
 }
 
 export const buses: Bus[] = [
@@ -28,6 +29,7 @@ export const buses: Bus[] = [
     liveTracking: true,
     seatsLeft: 46,
     windowSeats: 26,
+    image: "/Vehivle/scorpio.jpeg",
   },
   {
     id: 2,
@@ -42,6 +44,7 @@ export const buses: Bus[] = [
     liveTracking: true,
     seatsLeft: 46,
     windowSeats: 26,
+    image: "/Vehivle/EV-van.png",
   },
   {
     id: 3,
@@ -56,5 +59,6 @@ export const buses: Bus[] = [
     liveTracking: true,
     seatsLeft: 46,
     windowSeats: 26,
+    image: "/Vehivle/haice.png",
   },
 ];
