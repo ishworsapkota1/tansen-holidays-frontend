@@ -30,28 +30,28 @@ const HeroSection = () => {
     { from: "Bairabhwa", to: "Tansen" },
     { from: "Pokhara", to: "Tansen" },
   ];
-  
+
   // User avatars from Unsplash
   const userAvatars = [
     {
       src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop",
-      alt: "Woman with brown hair"
+      alt: "Woman with brown hair",
     },
     {
       src: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=100&auto=format&fit=crop",
-      alt: "Man with beard"
+      alt: "Man with beard",
     },
     {
       src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100&auto=format&fit=crop",
-      alt: "Woman with glasses"
+      alt: "Woman with glasses",
     },
     {
       src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop",
-      alt: "Smiling man"
+      alt: "Smiling man",
     },
     {
       src: "https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=100&auto=format&fit=crop",
-      alt: "Woman with hat"
+      alt: "Woman with hat",
     },
   ];
 
